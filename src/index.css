@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap');
+
+/* ________________________  */
+/* -------- colors --------  */
+
+:root {
+  --purple: #9792e3;
+  --white: #eeffec;
+  --green: #61e786;
+  --dark1: #181818;
+  --dark2: #222222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark1);
+  color: var(--white);
+  padding: 12px;
+}
+
+.profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile > img {
+  border-radius: 50%;
+  max-width: 100%;
+  width: 180px;
+}
+
+.profile h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.profile .squares span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.profile .squares span:nth-child(1) {
+  background-color: var(--green);
+  margin-right: 4px;
+}
+
+.profile .squares span:nth-child(2) {
+  background-color: var(--purple);
+  margin-right: 4px;
+}
+
+.profile .squares span:nth-child(3) {
+  background-color: var(--white);
+}
+
+section {
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.links {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 16px auto;
+  gap: 16px;
+}
+
+.links a {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.links__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--dark2);
+  height: 72px;
+}
+
+.portfolio {
+  background: linear-gradient(180deg, var(--green) 0%, #066c23 100%);
+}
+
+svg {
+  font-size: 36px;
+  margin-right: 8px;
+  color: var(--white);
 }
