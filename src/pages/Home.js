@@ -7,15 +7,20 @@ import {
   AiOutlineGithub,
 } from 'react-icons/ai';
 
+import './home.css';
+
 import { SiVisualstudiocode } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
       <div className="profile">
-        <img
-          src="https://avatars.githubusercontent.com/u/50876157?v=4"
-          alt="profile"
-        />
+        <div className="rgb">
+          <img
+            src="https://avatars.githubusercontent.com/u/50876157?v=4"
+            alt="profile"
+          />
+        </div>
         <h1>THIAGO BRADDOCK</h1>
         <div className="squares">
           <span></span>
@@ -25,12 +30,12 @@ function Home() {
       </div>
       <section>
         <div className="links">
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <Link to="/details/10" rel="noreferrer" target="_blank">
             <div className="links__content">
               <AiOutlineGithub />
               <h2>/thiagobraddock</h2>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="links">
           <a href="http://www.com" rel="noreferrer" target="_blank">
