@@ -10,7 +10,6 @@ import {
 import './home.css';
 
 import { SiVisualstudiocode } from 'react-icons/si';
-import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
@@ -30,39 +29,55 @@ function Home() {
       </div>
       <section>
         <div className="links">
-          <Link to="/details/10" rel="noreferrer" target="_blank">
+          <a
+            href="https://github.com/thiagobraddock"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="links__content">
               <AiOutlineGithub />
               <h2>/thiagobraddock</h2>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="links">
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/profthiago/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="links__content">
               <AiOutlineLinkedin />
               {/* <h2>Linkedin</h2> */}
             </div>
           </a>
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.youtube.com/programadorcaipira"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="links__content">
               <AiOutlineYoutube />
               {/* <h2>Youtube</h2> */}
             </div>
           </a>
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.instagram.com/thiago_braddock/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="links__content">
               <AiOutlineInstagram />
               {/* <h2>Instagram</h2> */}
             </div>
           </a>
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <a href="http://www.google.com" rel="noreferrer" target="_blank">
             <div className="links__content">
               <AiOutlineLaptop />
               {/* <h2>Setup</h2> */}
             </div>
           </a>
-          <a href="http://www.com" rel="noreferrer" target="_blank">
+          <a href="http://www.google.com" rel="noreferrer" target="_blank">
             <div className="links__content portfolio">
               <SiVisualstudiocode />
               <h2>PORTFOLIO</h2>
