@@ -1,12 +1,12 @@
 import React from 'react';
 import {
   AiOutlineYoutube,
-  AiOutlineLinkedin,
   AiOutlineLaptop,
   AiOutlineInstagram,
   AiOutlineGithub,
 } from 'react-icons/ai';
 
+import { FaLinkedinIn } from 'react-icons/fa';
 import './home.css';
 
 import { SiVisualstudiocode } from 'react-icons/si';
@@ -20,7 +20,11 @@ function Home() {
             alt="profile"
           />
         </div>
-        <h1>THIAGO BRADDOCK</h1>
+        <h1>
+          <small>alô, eu sou o </small>
+          <br />
+          THIAGO BRADDOCK
+        </h1>
         <div className="squares">
           <span></span>
           <span></span>
@@ -35,20 +39,18 @@ function Home() {
             target="_blank"
           >
             <div className="links__content">
+              <h2>github</h2>
               <AiOutlineGithub />
-              <h2>/thiagobraddock</h2>
             </div>
           </a>
-        </div>
-        <div className="links">
           <a
             href="https://www.linkedin.com/in/profthiago/"
             rel="noreferrer"
             target="_blank"
           >
             <div className="links__content">
-              <AiOutlineLinkedin />
-              {/* <h2>Linkedin</h2> */}
+              <h2>linkedin</h2>
+              <FaLinkedinIn />
             </div>
           </a>
           <a
@@ -57,8 +59,8 @@ function Home() {
             target="_blank"
           >
             <div className="links__content">
+              <h2>youtube</h2>
               <AiOutlineYoutube />
-              {/* <h2>Youtube</h2> */}
             </div>
           </a>
           <a
@@ -67,20 +69,20 @@ function Home() {
             target="_blank"
           >
             <div className="links__content">
+              <h2>instagram</h2>
               <AiOutlineInstagram />
-              {/* <h2>Instagram</h2> */}
             </div>
           </a>
           <a href="http://www.google.com" rel="noreferrer" target="_blank">
             <div className="links__content">
+              <h2>meu setup</h2>
               <AiOutlineLaptop />
-              {/* <h2>Setup</h2> */}
             </div>
           </a>
           <a href="http://www.google.com" rel="noreferrer" target="_blank">
             <div className="links__content portfolio">
+              <h2>portfolio</h2>
               <SiVisualstudiocode />
-              <h2>PORTFOLIO</h2>
             </div>
           </a>
         </div>
