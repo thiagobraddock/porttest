@@ -1,0 +1,9 @@
+.project__container {
+  /* background-color: rgb(57, 55, 213); */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 1em;
+  max-width: 1280px;
+  padding: 1em;
+}

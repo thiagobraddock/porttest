@@ -10,7 +10,9 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import './home.css';
 
 import { SiVisualstudiocode } from 'react-icons/si';
-function Home() {
+import { Link } from 'react-router-dom';
+function Home(props) {
+  console.log(props);
   return (
     <>
       <div className="profile">
@@ -79,12 +81,12 @@ function Home() {
               <AiOutlineLaptop />
             </div>
           </a>
-          <a href="http://www.google.com" rel="noreferrer" target="_blank">
+          <Link to="/portfolio">
             <div className="links__content portfolio">
               <h2>portfolio</h2>
               <SiVisualstudiocode />
             </div>
-          </a>
+          </Link>
         </div>
       </section>
     </>
