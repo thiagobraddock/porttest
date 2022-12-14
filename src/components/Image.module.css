@@ -1,25 +1,19 @@
 .container {
   display: grid;
-  background-color: blue;
+
 }
 
 .container img {
   width: 100%;
-  display: block;
-  max-width: 100%;
   grid-area: 1/1;
   opacity: 0;
-  transition: 0.2s;
-  font-size: 0;
-
+  transition: 0.3s;
 }
-
 .skeleton {
   grid-area: 1/1;
-  height: 320px;
-  width: 100%;
-  background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+  height: 280px;
   background-color: #ddd;
+  background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
   background-size: 200%;
   animation: skeleton 1.5s infinite linear;
 }
@@ -28,7 +22,6 @@
   from {
     background-position: 0px;
   }
-
   to {
     background-position: -200%;
   }

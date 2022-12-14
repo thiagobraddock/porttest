@@ -2,17 +2,17 @@ import React from 'react';
 import styles from './Card.module.css';
 import Image from './Image';
 
-function Card({ data: { id, module, image } }) {
+function Card({ data: { module, id, image, technologies } }) {
   return (
-    <div className={styles.project__details} key={id}>
-      <figure className={styles.img__project}>
+    <div className={styles.wrapper}>
+      <figure className={styles.image}>
         <Image src={image} alt={module} />
       </figure>
-      <div className={styles.title}>
-        <h1>{module}</h1>
-        <div className={styles.view__details}>
-          View Details <span>＞</span>
-        </div>
+      <div className={styles.details}>
+        {technologies.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+        <h2>{module}</h2>
       </div>
     </div>
   );
