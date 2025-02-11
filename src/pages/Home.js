@@ -4,6 +4,7 @@ import {
   AiOutlineLaptop,
   AiOutlineInstagram,
   AiOutlineGithub,
+  AiFillSecurityScan
 } from 'react-icons/ai';
 
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -81,12 +82,12 @@ function Home(props) {
               <AiOutlineLaptop />
             </div>
           </a>
-          <Link to="/portfolio">
+            <a href="https://thiagobraddock.notion.site/Seguran-a-Digital-3840d552abd144d6ae33da605d1dd9de?pvs=4" rel="noreferrer" target="_blank">
             <div className="links__content portfolio">
-              <h2>portfolio</h2>
-              <SiVisualstudiocode />
+              <h2>Segurança Digital</h2>
+              <AiFillSecurityScan />
             </div>
-          </Link>
+          </a>
         </div>
       </section>
     </>
